@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is a Thesis Project that engage with filipino sign languages">
+    <meta name="author" content="Ymir">
+    <title> Ymir - Sign portal</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="icon" href="static/assets/imgs/argon21headsss.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./assets/css/er.css') }}">
+</head>
+<style>
+    img {
+        width: 50%;
+        height: 70%;
+      }
+      
+      @media only screen and (max-width: 767px) {
+        img {
+          height: 80%;
+          width: auto;
+        }
+      }
+</style>
+<body>
+
+    
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="static/assets/imgs/argon21headsss.png" alt="ygytfytfuyfjyuj">
+                </a>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{{ url_for('index') }}" class="ml-4 nav-link btn btn-primary btn-sm"> <i class="fi fi-rr-home"></i> Home </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    
+    <header class="header" id="title">
+        <div class="overlay">
+            <br><br>
+            <img src="{{ url_for('video') }}" ><br>
+            <center> <a href="{{ url_for('sign') }}" class="ml-4 nav-link btn btn-primary btn-sm" onclick="myFunction()"> refresh</a></center>
+        </div>  
+        
+       
+    </header>
+    <script>
+        function myFunction() {
+          alert("Camera restarting");
+        }
+        </script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="assets/js/er.js"></script>
+    
+
+</body>
+</html>

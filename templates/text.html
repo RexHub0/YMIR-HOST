@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is a Thesis Project that engage with filipino sign languages">
+    <meta name="author" content="Ymir">
+    <title>Ymir - Text portal</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="icon" href="assets/imgs/argon21headsss.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='./assets/css/er.css') }}">
+
+</head>
+    <style>
+        #prompt{
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 20px 70px 20px 70px;
+            border-radius: 10px;
+            color : white;
+        }
+        .but{
+        }
+
+    </style>
+<body>
+
+    
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="static/assets/imgs/argon21headsss.png" alt="ygytfytfuyfjyuj">
+            </a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="{{ url_for('index') }}" class="ml-4 nav-link btn btn-primary btn-sm"><i class="fi fi-rr-home"></i> Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- End Of Second Navigation -->
+    <!-- Page Header -->
+    <header class="header" id="title">
+        <div class="overlay">
+           
+            <form action="/" method="post">
+                <label for="prompt">Ano ang gusto mong sabihin ?</label><br>
+                
+                <textarea type="text"  id="prompt" name="prompt"></textarea>
+                <br>
+                <div style="display: none;">
+                    <label for="width">Output Width:</label><br>
+                    
+                <input type="number" id="width" name="width"  value="768"><br>
+                <br>
+                <label for="height">Output Height:</label><br>
+                <input type="number" id="height" name="height" value="768"><br>
+                <br>
+                <label for="prompt_strength">Prompt Strength:</label><br>
+                <input type="range" id="prompt_strength" name="prompt_strength" value="0.8"><br>
+                <br>
+                <label for="num_outputs">Number of Outputs:</label><br>
+                <input type="number" id="num_outputs" name="num_outputs" min="1" max="4" value="1"><br>
+                <br>
+                <label for="num_inference_steps">Number of Inference Steps:</label><br>
+                <input type="number" id="num_inference_steps" name="num_inference_steps"  value="50"><br>
+                <br>
+                <label for="guidance_scale">Guidance Scale:</label><br>
+                <input type="number" id="guidance_scale" name="guidance_scale" value="7.5"><br>
+                <br></div>
+        
+                <button class="ml-7 nav-link btn btn-primary btn-sm" type="submit" value="submit">Enter</button>
+            </form>
+        
+        </div>  
+       
+       
+    </header>
+    
+    <br><br><br><br><br><br><br><br><br><br>
+        
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    <script src="assets/js/er.js"></script>
+    
+
+</body>
+</html>
